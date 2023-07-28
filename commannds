@@ -1,0 +1,4 @@
+npm i -g @nest/cli
+
+nest new fullstackbook-todo-nestjs
+
