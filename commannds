@@ -1,4 +1,28 @@
 npm i -g @nest/cli
 
 nest new fullstackbook-todo-nestjs
+npx @nestjs/cli new project-name
 
+npm install --save @nestjs/config @nestjs/typeorm typeorm pg
+
+npm run start:dev
+
+createdb fullstackbook-todo-nestjs
+
+npx typeorm migration:create scr/migration/create-todos-table
+
+npm run typeorm migration:run
+
+psql fullstackbook-todo-nestjs
+
+nest g resource todo
+npx @nestjs/cli g resource todo
+
+npm run test
+
+
+npx create-next-app@latest
+
+npm run dev
+
+npm i --save lodash
